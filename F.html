@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAMxALPHA</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: 'Press Start 2P';
+            src: url('press-start-2p.woff2') format('woff2'),
+                 url('press-start-2p.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1; 
+            background: black; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            
+            object-fit: cover; 
+        }
+
+        .content {
+            position: relative;
+            z-index: 2; 
+            text-align: center;
+            color: white;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+        }
+
+        .content header {
+            margin: 0; 
+        }
+
+        .content header h1 {
+            font-family:'Courier New', Courier, monospace; 
+            font-size: 3em; 
+            margin: 0; 
+        }
+
+        .gaming-theme {
+            color: #FFD700; /* Gold color for gaming theme */
+        }
+
+        .content header a {
+            color: white; 
+            text-decoration: none
+        }
+
+        .content header a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-background">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="fire.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="content">
+    <header>
+        <a href="https://alphadevil143.github.io/teamalpha/" target="_blank">
+            <h1><span class="gaming-theme">ALPHA</span>x<span class="gaming-theme">ESPORTS</span></h1>
+        </a>
+    </header>
+</div>
+
+</body>
+</html>
